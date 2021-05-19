@@ -1,18 +1,38 @@
-import React from 'react'
+import React, {Component} from 'react'
 import './NavBar.scss'
-//import { NavLink } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 const NavBar = () => {
   return (
-    <div className="nav-bar">
-      <section className="nav-name">
-        <h1>Peyton Jones</h1>
-      </section>
-      <section className="nav-btns">
-        <button>About</button>
-        <button>Contact</button>
-      </section>
-    </div>
+    <Router>
+      <div className="nav-bar">
+        <section className="nav-name">
+          <h1>PEYTON JONES</h1>
+        </section>
+        <section className="nav-btns">
+          <Link to="/about">
+            <button type="btn" >
+                  About
+            </button>
+          </Link>
+          <Link to="/contact">
+            <button type="btn">
+                  Contact
+            </button>
+          </Link>
+          <Link to="/">
+            <button type="btn">
+                  Home
+            </button>
+          </Link>
+        </section>
+      </div>
+    </Router>
   )
 }
 

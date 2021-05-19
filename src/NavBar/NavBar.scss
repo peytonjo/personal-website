@@ -1,4 +1,4 @@
-
+@import '../colors.scss';
 
 .nav-bar {
 //  width: 100%;
@@ -15,8 +15,8 @@
 }
 
 .nav-name {
-  color: white;
-  background-color: black;
+  color: $white;
+  background-color: $black;
   margin: 10px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   top: 0; 
@@ -30,3 +30,17 @@
 .nav-name h1 {
   margin: 0px;
 }
+
+.nav-btns {
+  background-color: #1C1C1C;
+  padding: 1%;
+  display: flex;
+  padding-left: 7.5%;
+}
+
+.nav-btns button {
+  background-color: transparent;
+  color: white;
+  border: none;
+}
+
